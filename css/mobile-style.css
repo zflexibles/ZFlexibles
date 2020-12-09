@@ -1,0 +1,71 @@
+@media only screen and (max-width: 768px) {
+    header .navbar-brand {
+        padding-left: 1rem;
+    }
+
+    .section-1 .row .col-md-6 .panel {
+        position: initial;
+        width: initial;
+        height: initial;
+    }
+
+    .section-2 .team {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .section-2 .card {
+        width: 28rem;
+        margin-left: -15vmin;
+    }
+
+    .section-2 .carousel-inner {
+        width: 24rem;
+        margin-left: -6.5vmin;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+
+    header .container-fluid img {
+        width: 55%;
+        margin-top: 8vmin;
+        margin-left: 6vmin;
+    }
+
+    header .row .col-md-5 img {
+        margin-bottom: 30vmin;
+        width: 100%;
+        margin-left: -4vh;
+    }
+
+    footer .row .col-md-2 {
+        margin-top: 8vmin;
+    }
+
+    .section-2 .card {
+        width: 20rem;
+        margin-left: 1vmin;
+    }
+
+    .section-2 .carousel-inner {
+        margin-left: -5vmin;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .section-2 .carousel-inner {
+        margin-left: -12.5vmin;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .section-2 .card {
+        width: 18rem;
+    }
+
+    .section-2 .carousel-inner {
+        margin-left: -21vmin;
+    }
+}

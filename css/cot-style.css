@@ -1,0 +1,139 @@
+body {
+    font-family: var(--Rubik);
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 0px;
+    box-shadow: 0px 0px 20px #00000010;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    border: 1px solid rgba(128, 128, 128, 0.199);
+    margin-top: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-size: 24px;
+    border-radius: 8px;
+    font-family: var(--Rubik);
+    color: #209cff;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: .3s ease background-color;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(214, 226, 236);
+}
+
+#status {
+    width: 20%;
+    max-width: 500%;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+#status.success {
+    background-color: rgb(211, 250, 153);
+    animation: status 4s ease forwards;
+}
+
+#status.error {
+    background-color: rgb(250, 129, 92);
+    color: white;
+    animation: status 4s ease forwards;
+}
+
+@keyframes status {
+    0% {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    90% {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    100% {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+/* Footer */
+
+footer {
+    background: rgba(0, 0, 0, 0.76);
+    overflow-x: hidden;
+    padding: 14vmin 18vmin;
+    font-family: var(--Rubik);
+}
+
+footer p {
+    color: whitesmoke;
+    line-height: 1vmin;
+}
+
+footer p>span {
+    color: #68e0cf;
+}
+
+footer input {
+    border: none !important;
+}
+
+footer input::placeholder {
+    color: white !important;
+}
+
+footer .input-group .input-group-text {
+    background: var(--bggradient);
+    border: none;
+}
+
+footer .column i {
+    color: #68e0cf;
+}
+
+footer .column i+i {
+    padding: 0 0.1em;
+}
